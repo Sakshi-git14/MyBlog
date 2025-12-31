@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sakshi's Blog</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Light theme with modern font */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      background: #ecf0f1;
+      padding: 15px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    h2 {
+      color: #3498db;
+      margin-top: 30px;
+      font-weight: 600;
+    }
+
+    /* Button styling */
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: 0.3s;
+      font-family: 'Poppins', sans-serif;
+    }
+    button:hover {
+      background-color: #1abc9c;
+    }
+
+    /* Form styling */
+    form {
+      margin: 20px 0;
+      padding: 20px;
+      background: #ffffff;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+    input[type="text"], input[type="email"], input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: 'Poppins', sans-serif;
+    }
+    input[type="submit"] {
+      margin-top: 15px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+    input[type="submit"]:hover {
+      background-color: #2ecc71;
+    }
+
+    /* Video styling */
+    video {
+      display: block;
+      margin-top: 15px;
+      border: 3px solid #3498db;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(52,152,219,0.3);
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Sakshi's Blog 🌸</h1>
+
+  <!-- Button -->
+  <button onclick="alert('Thanks for visiting Sakshi\'s Blog!')">Click Me </button>
+
+  <!-- Form -->
+  <h2>Contact Sakshi 📝</h2>
+  <form action="/submit" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <input type="submit" value="Send Message">
+  </form>
+
+  <!-- Video -->
+  <h2>Watch Sakshi's Intro Video 🎬</h2>
+  <video width="400" controls>
+    <source src="intro.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- File Attachment -->
+  <h2>Upload Your File 📂</h2>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="fileUpload">
+    <input type="submit" value="Upload File">
+  </form>
+</body>
+</html>
+
+
